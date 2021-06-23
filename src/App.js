@@ -12,7 +12,7 @@ class App extends React.Component {
   handleCLick = () => {
     this.setState((prevState, prevProps) => {
       return {
-        meaningOfLife: preState.meaningOfLife + 1,
+        meaningOfLife: prevState.meaningOfLife + prevProps.increment,
       };
     });
   };
